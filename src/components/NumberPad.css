@@ -1,0 +1,41 @@
+.numpad {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.numpad__btn {
+  width: 48px;
+  height: 48px;
+  border: 2px solid #1a1a2e;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.numpad__btn:hover:not(:disabled) {
+  background: #e8f0fe;
+  transform: scale(1.05);
+}
+
+.numpad__btn:active:not(:disabled) {
+  transform: scale(0.95);
+}
+
+.numpad__btn--erase {
+  width: auto;
+  padding: 0 16px;
+  background: #ffcdd2;
+  border-color: #c62828;
+  color: #c62828;
+}
+
+.numpad__btn--used {
+  opacity: 0.3;
+  cursor: default;
+}

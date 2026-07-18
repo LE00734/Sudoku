@@ -1,0 +1,62 @@
+.controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.controls__difficulty {
+  display: flex;
+  gap: 8px;
+}
+
+.controls__diff-btn {
+  padding: 8px 16px;
+  border: 2px solid #1a1a2e;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+}
+
+.controls__diff-btn:hover {
+  background: #e8f0fe;
+}
+
+.controls__diff-btn--active {
+  background: #1a1a2e;
+  color: #fff;
+}
+
+.controls__actions {
+  display: flex;
+  gap: 12px;
+}
+
+.controls__action-btn {
+  padding: 10px 24px;
+  border: 2px solid #1565c0;
+  border-radius: 8px;
+  background: #1565c0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.controls__action-btn:hover {
+  background: #0d47a1;
+}
+
+.controls__action-btn--solve {
+  background: #2e7d32;
+  border-color: #2e7d32;
+}
+
+.controls__action-btn--solve:hover {
+  background: #1b5e20;
+}
